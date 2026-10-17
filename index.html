@@ -8,16 +8,21 @@
 </head>
 <body>
   <div id="app">加载中...</div>
-  <!-- 引入侧边栏折叠样式 -->
-  <link rel="stylesheet" href="https://unpkg.com/docsify-sidebar-collapse/dist/sidebar-collapse.min.css" />
-  <!-- 引入侧边栏折叠脚本 -->
-  <script src="https://unpkg.com/docsify-sidebar-collapse/dist/sidebar-collapse.min.js"></script>
+
+  <!-- 引入新的折叠插件 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@lx0f/docsify-sidebar-collapse@2.0.24/dist/index.css" />
+  <!-- 引入新的折叠插件 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@lx0f/docsify-sidebar-collapse@2.0.24/dist/index.js"></script>
+  
   <script>
     window.$docsify = {
       name: 'Robotics Tutorial',          // 改成你的网站标题
       loadSidebar: true,          // 开启侧边栏
       homepage: 'README.md',      // 首页文件，根目录的 README.md
       subMaxLevel: 2              // 侧边栏自动显示到二级标题，可选
+      loadSidebar: true, // 确保已开启
+      enableSidebarCollapse: true, // 启用折叠功能
+      nameLink: "/", // 根据你的实际情况设置，一般设为根路径
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
